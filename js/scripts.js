@@ -3,6 +3,10 @@ function DestinationList() {
     this.places = {};
 }
 
+DestinationList.prototype.addPlace = function(place) {
+    this.places[place.city] = place;
+}
+
 
 //Business Logic for Place ------
 function Place(country, city, landmark, favoriteFood, wouldRecommend) {
